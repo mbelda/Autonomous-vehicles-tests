@@ -1,0 +1,6 @@
+{
+  "name" : "line-detection-bare-br",
+  "base" : "br-base.json",
+  "overlay" : "overlay",
+  "run" : "run.sh"
+}

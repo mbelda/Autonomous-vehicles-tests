@@ -1,0 +1,5 @@
+{
+  "name" : "line-detection-bare-hwacha-bin",
+  "base" : "bare",
+  "bin" : "line-detection.riscv"
+}

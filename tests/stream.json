@@ -1,0 +1,5 @@
+{
+  "name" : "stream",
+  "base" : "bare",
+  "bin" : "stream.riscv"
+}

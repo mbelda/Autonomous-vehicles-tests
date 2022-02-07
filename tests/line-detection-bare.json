@@ -1,0 +1,5 @@
+{
+  "name" : "line-detection-bare",
+  "base" : "bare",
+  "bin" : "overlay/src/line-detection-bare.riscv"
+}

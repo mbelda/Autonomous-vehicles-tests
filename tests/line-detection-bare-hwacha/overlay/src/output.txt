@@ -1,0 +1,26 @@
+~/firesim/target-design/chipyard/esp-tools-install/bin/riscv64-unknown-elf-gcc -I./../env -I./common -I./line-detection-bare-hwacha -DPREALLOCATE=1 -mcmodel=medany -static -std=gnu99 -O2 -ffast-math -fno-common -fno-builtin-printf -fno-tree-loop-distribute-patterns -march=rv64gcxhwacha -o line-detection-bare-hwacha.riscv ./routinesCPU.c ./img0.c ./main.c ./common/syscalls.c ./vec_mul.S ./vec_add.S ./common/crt.S -static -nostdlib -nostartfiles -lm -lgcc -T ./common/test.ld
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/ccOZtmHJ.o: in function `.L8':
+routinesCPU.c:(.text+0x1c2): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x1d6): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x1e4): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x1f2): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x200): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/ccOZtmHJ.o: in function `.L22':
+routinesCPU.c:(.text+0x3cc): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/ccOZtmHJ.o: in function `.L12':
+routinesCPU.c:(.text+0x3e0): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x3ee): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x3fc): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x40a): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x4ca): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x4d8): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x4e6): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x4f4): undefined reference to `vec_mul_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x502): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x510): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: routinesCPU.c:(.text+0x51e): undefined reference to `vec_add_asm'
+/home/centos/firesim/target-design/chipyard/esp-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/ccAj3mg8.o: in function `main':
+main.c:(.text.startup+0x4e): undefined reference to `malloc'
+collect2: error: ld returned 1 exit status
+Makefile:25: recipe for target 'line-detection-bare-hwacha.riscv' failed
+make: *** [line-detection-bare-hwacha.riscv] Error 1

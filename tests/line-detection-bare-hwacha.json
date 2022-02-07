@@ -1,0 +1,5 @@
+{
+  "name" : "line-detection-bare-hwacha",
+  "base" : "bare",
+  "bin" : "overlay/src/line-detection-bare-hwacha.riscv"
+}

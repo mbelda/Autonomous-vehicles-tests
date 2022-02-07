@@ -1,0 +1,5 @@
+{
+  "name" : "hsaxpy",
+  "base" : "bare",
+  "bin" : "hsaxpy.riscv"
+}

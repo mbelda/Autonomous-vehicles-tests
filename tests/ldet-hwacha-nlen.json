@@ -1,0 +1,5 @@
+{
+  "name" : "ldet-hwacha-nlen",
+  "base" : "bare",
+  "bin" : "ldet-hwacha-nlen.riscv"
+}

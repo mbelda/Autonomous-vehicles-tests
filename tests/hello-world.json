@@ -1,0 +1,7 @@
+{
+  "name" : "hello-world",
+  "base" : "br-base.json",
+  "host-init" : "build.sh",
+  "overlay" : "overlay",
+  "run" : "run.sh"
+}

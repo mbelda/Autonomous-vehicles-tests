@@ -1,0 +1,5 @@
+{
+  "name" : "vec-vvadd",
+  "base" : "bare",
+  "bin" : "vec-vvadd.riscv"
+}
